@@ -1,14 +1,14 @@
-require_relative "app"
+require_relative "module"
 
 class Calculator
   include A
   def input
     puts 'Выберите значения для действия: +, *, /, -, **'
-    gets.chomp
+  gets.chomp
   end
 end
 
-#создаём экземпляр класса
+# создаём экземпляр класса
 calculator = Calculator.new
 
 case calculator.input
